@@ -1,0 +1,605 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,700;1,300&display=swap");
+
+:root {
+  --background-image-color: #000;
+}
+
+html {
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+}
+
+body {
+  max-width: 1920px;
+  margin: auto;
+  background-color: #0000000f;
+}
+
+main {
+  background-color: #fff;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+nav ul {
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  padding-right: 0.5rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+form {
+  padding: 0 15% 1% 15%;
+  display: grid;
+  grid-template-columns: auto;
+}
+
+input,
+textarea {
+  font-size: 1rem;
+}
+
+button {
+  font-size: 0.7rem;
+  padding: 0.25rem;
+  margin: 0.25rem 0.25rem 0.25rem 0;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 0.5rem;
+  font-size: 0.67rem;
+  text-align: end;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  font-style: italic;
+  padding: 0.5rem;
+  font-size: 0.67rem;
+  text-align: center;
+}
+
+.hero {
+  display: flex;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: var(--background-image-color);
+  justify-content: center;
+}
+
+.hero h1 {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  text-align: left;
+  margin: 0.5rem;
+}
+
+.hero img {
+  max-width: 50%;
+}
+
+#contact-me h2 {
+  margin: 0;
+}
+
+.black-background {
+  background-color: var(--background-image-color);
+}
+
+.black-background h2 {
+  color: #fff;
+  margin: 0;
+}
+
+#portfolio-section {
+  padding-bottom: 1rem;
+}
+
+.black-background > div > a {
+  color: #d8b33c;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+#index-portfolio-images {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 0.67rem;
+}
+
+.index-portfolio-image {
+  border-style: solid;
+  border-width: 0.01rem;
+  border-color: #4c4c4c;
+}
+
+#index-portfolio-images img:first-child {
+  max-width: 48%;
+}
+
+#index-portfolio-images img:nth-child(2) {
+  max-width: 48%;
+}
+
+#my-story {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 0.1rem;
+}
+
+#my-story h2 {
+  margin: 1rem 0;
+}
+
+/* #portfolio-main {
+  margin-top: 0.05rem;
+  margin-bottom: 0.05rem;
+} */
+
+.highlight {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border-style: solid;
+  border-width: 0.005rem;
+  border-color: #9d9d9d;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+.highlight.last-item {
+  border-style: solid;
+  border-width: 0.005rem;
+  border-color: #9d9d9d;
+  border-left: none;
+  border-right: none;
+}
+
+.highlight h2 {
+  margin: 1rem;
+}
+
+.highlight img {
+  min-width: 50%;
+  max-width: 50%;
+}
+.highlight.reverce img {
+  border-style: solid;
+  border-width: 0.005rem;
+  border-color: #9d9d9d;
+  border-top: none;
+  border-left: none;
+  border-bottom: none;
+}
+
+.highlight img {
+  border-style: solid;
+  border-width: 0.005rem;
+  border-color: #9d9d9d;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+.highlight > div {
+  flex-grow: 1;
+}
+
+.reverce {
+  flex-direction: row-reverse;
+}
+
+#item-images {
+  display: flex;
+  margin: 0.5rem 0;
+}
+
+#item-images img {
+  width: 100%;
+  min-width: 49%;
+  vertical-align: top;
+  border-style: solid;
+  border-width: 0.005rem;
+  border-color: #dadada;
+}
+
+.work-item-text {
+  padding: 0 10%;
+}
+
+.work-item-text h3 {
+  margin-top: 0;
+  margin-bottom: 0.7rem;
+}
+
+.work-item-text p,
+.work-item-text ul {
+  padding-bottom: 0.3rem;
+  margin: 0;
+}
+
+@media screen and (max-width: 351px) {
+  html {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .hero h1 {
+    left: 5%;
+  }
+
+  .hero img {
+    max-width: 100%;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  #portfolio-section {
+    padding-bottom: 0.3rem;
+  }
+
+  .highlight,
+  .highlight.last-item {
+    display: block;
+    border-width: 0.2rem;
+    border-color: #4f4f4f;
+  }
+
+  .highlight h2 {
+    margin: 0.1rem;
+    color: #000;
+  }
+
+  .highlight.black-background {
+    background-color: #fff;
+  }
+
+  .highlight img {
+    border-style: none;
+    max-width: 100%;
+    vertical-align: bottom;
+  }
+
+  .highlight.reverce img {
+    border-style: none;
+    vertical-align: bottom;
+  }
+
+  .black-background > div > a {
+    font-size: 1rem;
+  }
+  .highlight > div > a {
+    font-size: 1rem;
+    color: #000;
+  }
+}
+
+@media screen and (min-width: 352px) and (max-width: 600px) {
+  html {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .hero h1 {
+    left: 5%;
+  }
+
+  .hero img {
+    max-width: 100%;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  #portfolio-section {
+    padding-bottom: 0.3rem;
+  }
+
+  .highlight h2 {
+    margin: 0.1rem;
+  }
+
+  .highlight img {
+    border-style: none;
+  }
+
+  .highlight.reverce img {
+    border-style: none;
+  }
+
+  .black-background > div > a {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 767px) {
+  html {
+    font-size: 24px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero h1 {
+    left: 5%;
+  }
+
+  .hero img {
+    max-width: 100%;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  #portfolio-section {
+    padding-bottom: 0.3rem;
+  }
+
+  .highlight h2 {
+    margin: 0.1rem;
+  }
+
+  .highlight img {
+    border-style: none;
+  }
+
+  .highlight.reverce img {
+    border-style: none;
+  }
+
+  .black-background > div > a {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 24px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero h1 {
+    left: 5%;
+  }
+
+  .hero img {
+    max-width: 100%;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  #portfolio-section {
+    padding-bottom: 0.5rem;
+  }
+
+  .highlight h2 {
+    margin: 0.1rem;
+  }
+
+  .black-background > div > a {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  html {
+    font-size: 36px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .hero h1 {
+    left: 5%;
+  }
+
+  .hero img {
+    max-width: 100%;
+  }
+
+  h2 {
+    font-size: 1.45rem;
+  }
+
+  #portfolio-section {
+    padding-bottom: 0.4rem;
+  }
+
+  .highlight h2 {
+    margin: 0.1rem;
+  }
+
+  .black-background > div > a {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1482px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .highlight h2 {
+    margin: 0.1rem;
+  }
+
+  .black-background > div > a {
+    font-size: 1.5rem;
+  }
+}
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #ffffff !important;
+    color: #000000 !important;
+    box-shadow: none;
+    text-shadow: none;
+  }
+
+  @page {
+    margin: 1cm, 2cm, 1cm, 2cm;
+    size: letter-portrait;
+  }
+
+  html {
+    font-size: 18px;
+  }
+
+  h1,
+  h2,
+  h3 {
+    page-break-inside: avoid;
+    page-break-after: avoid;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  body > *:not(main) {
+    display: none;
+  }
+
+  ol,
+  ul {
+    page-break-inside: avoid;
+  }
+
+  p {
+    orphans: 2;
+    widows: 2;
+  }
+
+  /* img {
+    display: none;
+  } */
+
+  .hero h1 {
+    left: 25%;
+  }
+
+  form {
+    display: none;
+  }
+
+  #contact-me h2 {
+    display: none;
+  }
+
+  .highlight,
+  .highlight.last-item {
+    display: block;
+    border-style: none;
+  }
+
+  .highlight h2 {
+    margin: 0.1rem;
+    color: #000;
+  }
+
+  .highlight.black-background {
+    background-color: #fff;
+  }
+
+  .highlight img {
+    border-style: none;
+    max-width: 90%;
+    vertical-align: bottom;
+  }
+
+  .highlight.reverce img {
+    border-style: none;
+    vertical-align: bottom;
+  }
+
+  .black-background > div > a {
+    font-size: 1rem;
+  }
+  .highlight > div > a {
+    font-size: 1rem;
+    color: #000;
+  }
+
+  #item-images {
+    display: flex;
+    margin: 0.5rem 0;
+    justify-content: center;
+  }
+
+  #item-images img {
+    max-height: 350px;
+    width: auto;
+    min-width: 0;
+  }
+}

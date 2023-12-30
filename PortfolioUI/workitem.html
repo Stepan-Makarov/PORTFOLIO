@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title lang="en">Sample</title>
+    <meta name="description" content="Страница с примерами работ Степана" />
+    <!--Here should be a real url-->
+    <!-- <meta property="og:url" content="http://127.0.0.1:5500/workitem.html"> -->
+    <!--Here should be a real url-->
+    <!-- <link rel="canonical" href="http://127.0.0.1:5500/workitem.html"> -->
+    <meta property="og:title" content="Пример работы Макарова Степана" />
+    <meta property="og:description" content="Пример работы Макарова Степана" />
+    <meta property="og:Image" content="images/heroImageForMeta.jpg" />
+    <meta
+      property="og:Image:alt"
+      content="Фото со спины с красивыми горами на заднем плане"
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:locate" content="ru" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="css/site.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li class="nav-work-item">
+            <a href="workitem.html?item=1">Item #1</a>
+          </li>
+          <li class="nav-work-item">
+            <a href="workitem.html?item=2">Item #2</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="work-item-header-section">
+        <h2 id="work-item-header">01. Приложение для ритейл менеджмента</h2>
+        <div id="main-item-images" class="black-background">
+          <div id="item-images">
+            <!-- <img
+              src="images/wpfSalesPage.jpg"
+              alt="изображение страницы сайта с перечисленной продукцией"
+            /> -->
+          </div>
+        </div>
+      </div>
+      <div id="project-text" class="work-item-text">
+        <h3>Проект</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+          fugiat, veniam quibusdam consequuntur accusamus cum id sint ratione
+          accusantium odit enim ea facere odio voluptates.
+        </p>
+      </div>
+      <div id="technologies-section" class="work-item-text">
+        <h3>Технологии</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>C#</li>
+        </ul>
+      </div>
+      <div id="challenges-text" class="work-item-text">
+        <h3>Трудности</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+          fugiat, veniam quibusdam consequuntur accusamus cum id sint ratione
+          accusantium odit enim ea facere odio voluptates.
+        </p>
+      </div>
+    </main>
+    <footer lang="en">
+      &copy; <span id="copyrightYear">2024</span> by Stepan Makarov.
+    </footer>
+    <script src="js/app.js"></script>
+    <script>
+      app.workItem();
+    </script>
+  </body>
+</html>

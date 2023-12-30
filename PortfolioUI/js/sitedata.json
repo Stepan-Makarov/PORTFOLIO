@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Приложение для ритейл менеджмента",
+    "smallImage": "images/wpwUserManagementPageNarrow.jpg",
+    "smallImageAlt": "Изображение страницы управления ролями пользователей с помощью десктопного приложения",
+    "bigImages": ["images/blazor-productpage-wide.jpg"],
+    "bigImagesAlt": ["изображение страницы сайта с перечисленной продукцией"],
+    "projectText": "<p>Retail Management Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, ad blanditiis ex in veritatis enim laboriosam! Iure praesentium magni sed!</p>",
+    "challengesText": "Chalanges Retail Management Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, ad blanditiis ex in veritatis enim laboriosam! Iure praesentium magni sed!",
+    "technologiesText": "Retail Management Technologies Lorem ipsum dolor sit amet consectetur adipisicing elit",
+    "technologiesList": ["C#", "API", "WPF", "Blazor", "HTML", "CSS"]
+  },
+  {
+    "title": "Сайт ресторана",
+    "smallImage": "images/reustarantAboutBegining.jpg",
+    "smallImageAlt": "Изображение страницы сайта ресторана",
+    "bigImages": [
+      "images/reustarantAboutBegining.jpg",
+      "images/reustarantAboutContinue.jpg"
+    ],
+    "bigImagesAlt": [
+      "Начало страницы сайта ресторана",
+      "Продолжение страницы сайта ресторана"
+    ],
+    "projectText": "<p>Reustarant Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, ad blanditiis ex in veritatis enim laboriosam! Iure praesentium magni sed!</p>",
+    "challengesText": "Chalanges Reustarant Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, ad blanditiis ex in veritatis enim laboriosam! Iure praesentium magni sed!",
+    "technologiesText": "Reustarant Technologies Lorem ipsum dolor sit amet consectetur adipisicing elit",
+    "technologiesList": ["HTML", "CSS"]
+  }
+]

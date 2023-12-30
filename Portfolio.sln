@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34316.72
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PortfolioLibrary", "PortfolioLibrary\PortfolioLibrary.csproj", "{60A52DA6-82DF-463B-BDDE-19829E8C6AA0}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "PortfolioUI", "PortfolioUI\", "{B6F47CA6-2196-45B0-8958-6AAB04A72058}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_13829"
+		Debug.AspNetCompiler.PhysicalPath = "PortfolioUI\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_13829\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_13829"
+		Release.AspNetCompiler.PhysicalPath = "PortfolioUI\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_13829\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "13829"
+		SlnRelativePath = "PortfolioUI\"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortfolioApi", "PortfolioApi\PortfolioApi.csproj", "{B0AEBF20-8446-44AC-BF3B-59359B61D798}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60A52DA6-82DF-463B-BDDE-19829E8C6AA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60A52DA6-82DF-463B-BDDE-19829E8C6AA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60A52DA6-82DF-463B-BDDE-19829E8C6AA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60A52DA6-82DF-463B-BDDE-19829E8C6AA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6F47CA6-2196-45B0-8958-6AAB04A72058}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6F47CA6-2196-45B0-8958-6AAB04A72058}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6F47CA6-2196-45B0-8958-6AAB04A72058}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6F47CA6-2196-45B0-8958-6AAB04A72058}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{B0AEBF20-8446-44AC-BF3B-59359B61D798}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0AEBF20-8446-44AC-BF3B-59359B61D798}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0AEBF20-8446-44AC-BF3B-59359B61D798}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0AEBF20-8446-44AC-BF3B-59359B61D798}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {687E308F-B482-4FD0-9639-1CD75F0C7E79}
+	EndGlobalSection
+EndGlobal

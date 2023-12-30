@@ -1,0 +1,22 @@
+@PortfolioApi_HostAddress = http://localhost:5294
+
+GET {{PortfolioApi_HostAddress}}/api/portfolio/projects
+Accept: application/json
+
+###
+
+POST {{PortfolioApi_HostAddress}}/api/portfolio/messages
+Content-Type: application/json
+
+{
+  "senderName": "Tom",
+  "senderEmail": "Tom@mail.ru",
+  "senderMessage": "Test this POST command"
+}
+
+###
+
+GET {{PortfolioApi_HostAddress}}/api/portfolio/messages
+Accept: application/json
+
+###

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title lang="en">Portfolio</title>
+    <meta
+      name="description"
+      content="Привет, меня зовут Степан, я начинающий C# разработчик и этот сайт является моим портфолио"
+    />
+    <!--Here should be a real url-->
+    <!-- <meta property="og:url" content="http://127.0.0.1:5500"> -->
+    <!--Here should be a real url-->
+    <!-- <link rel="canonical" href="http://127.0.0.1:5500"> -->
+    <meta
+      property="og:title"
+      content="Макаров Степан - портфолио C# разработчика"
+    />
+    <meta
+      property="og:description"
+      content="Привет, меня зовут Степан, я начинающий C# разработчик и этот сайт является моим портфолио"
+    />
+    <meta property="og:Image" content="images/heroImageForMeta.jpg" />
+    <meta
+      property="og:Image:alt"
+      content="Фото со спины с красивыми горами на заднем плане"
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:locate" content="ru" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="css/site.css" />
+  </head>
+  <body>
+    <main>
+      <div class="hero">
+        <h1 lang="en">
+          Hi I'm<br />
+          Stepan
+        </h1>
+        <img
+          src="images/heroImage.jpg"
+          alt="Фотокрафия меня, стоящего на мосту"
+        />
+      </div>
+      <div id="contact-me">
+        <h2>Связаться со мной</h2>
+        <form id="contact-form" action="" method="post">
+          <label for="fullname">Имя: </label>
+          <input id="fullname" type="text" name="fullname" required />
+          <label for="email" lang="en">Email: </label>
+          <input id="email" type="email" name="email" />
+          <label for="message">Сообщение: </label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <div>
+            <button type="submit">Отправить сообщение</button>
+            <button type="reset">Отчистить поля</button>
+          </div>
+        </form>
+      </div>
+      <div id="portfolio-section" class="black-background">
+        <div>
+          <h2>Это примеры моих работ</h2>
+          <a href="portfolio.html">Изучить подробнее</a>
+        </div>
+        <div id="index-portfolio-images">
+          <img
+            class="index-portfolio-image"
+            src="images/blazorProductPage.jpg"
+            alt="Изображение страницы с продуктами из приложения для ритейл менеджмента"
+          />
+          <img
+            class="index-portfolio-image"
+            src="images/reustarantHomeBegin.jpg"
+            alt="Изображение стартовой страницы сайта ресторана"
+          />
+        </div>
+      </div>
+      <div id="my-story">
+        <h2>О себе</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto,
+          dolorum praesentium? Libero cupiditate facere maiores dolores quidem
+          error tenetur corporis.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, illo.
+        </p>
+      </div>
+    </main>
+    <footer lang="en">
+      &copy; <span id="copyrightYear">2024</span> by Stepan Makarov.
+    </footer>
+    <script src="js/app.js"></script>
+    <script>
+      app.homepage();
+    </script>
+  </body>
+</html>
