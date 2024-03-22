@@ -36,6 +36,7 @@ public class PortfolioData : IPortfolioData
             item.ChallengesText = project.ChallengesText;
             item.TechnologiesText = project.TechnologiesText;
             item.TechnologiesList = project.TechnologiesList?.Split(',').ToList();
+            item.LinkToGitHub = project.LinkToGitHub;
 
             output.Add(item);
         }

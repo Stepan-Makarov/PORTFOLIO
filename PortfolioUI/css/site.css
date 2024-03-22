@@ -139,6 +139,7 @@ footer {
 #index-portfolio-images {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   padding-top: 0.67rem;
 }
 
@@ -154,6 +155,11 @@ footer {
 
 #index-portfolio-images img:nth-child(2) {
   max-width: 48%;
+}
+
+#index-portfolio-images img:nth-child(3) {
+  width: 96%;
+  margin-top: 1rem;
 }
 
 #my-story {
@@ -254,6 +260,26 @@ footer {
   margin: 0;
 }
 
+.hiden-link-to-github {
+  display: none;
+}
+
+.link-to-github {
+  display: block;
+  padding: 0 10%;
+  margin-bottom: 0.3rem;
+  font-size: 1.1rem;
+}
+
+.link-to-github a {
+  color: #000000;
+}
+
+.link-to-github a:hover {
+  color: #424241;
+  font-weight: 600;
+}
+
 @media screen and (max-width: 351px) {
   html {
     font-size: 16px;
@@ -277,6 +303,11 @@ footer {
 
   #portfolio-section {
     padding-bottom: 0.3rem;
+  }
+
+  #index-portfolio-images img:nth-child(3) {
+    width: 97.75%;
+    margin-top: 0.125rem;
   }
 
   .highlight,
@@ -340,6 +371,11 @@ footer {
     padding-bottom: 0.3rem;
   }
 
+  #index-portfolio-images img:nth-child(3) {
+    width: 97.25%;
+    margin-top: 0.3rem;
+  }
+
   .highlight h2 {
     margin: 0.1rem;
   }
@@ -380,6 +416,11 @@ footer {
 
   #portfolio-section {
     padding-bottom: 0.3rem;
+  }
+
+  #index-portfolio-images img:nth-child(3) {
+    width: 97.25%;
+    margin-top: 0.3rem;
   }
 
   .highlight h2 {
@@ -424,6 +465,11 @@ footer {
     padding-bottom: 0.5rem;
   }
 
+  #index-portfolio-images img:nth-child(3) {
+    width: 97.25%;
+    margin-top: 0.45rem;
+  }
+
   .highlight h2 {
     margin: 0.1rem;
   }
@@ -458,6 +504,11 @@ footer {
     padding-bottom: 0.4rem;
   }
 
+  #index-portfolio-images img:nth-child(3) {
+    width: 97.25%;
+    margin-top: 0.5rem;
+  }
+
   .highlight h2 {
     margin: 0.1rem;
   }
@@ -470,6 +521,11 @@ footer {
 @media screen and (min-width: 1200px) and (max-width: 1482px) {
   h2 {
     font-size: 1.8rem;
+  }
+
+  #index-portfolio-images img:nth-child(3) {
+    width: 97.25%;
+    margin-top: 0.5rem;
   }
 
   .highlight h2 {

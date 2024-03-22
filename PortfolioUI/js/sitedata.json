@@ -4,15 +4,48 @@
     "smallImage": "images/wpwUserManagementPageNarrow.jpg",
     "smallImageAlt": "Изображение страницы управления ролями пользователей с помощью десктопного приложения",
     "bigImages": ["images/blazor-productpage-wide.jpg"],
-    "bigImagesAlt": ["изображение страницы сайта с перечисленной продукцией"],
-    "projectText": "<p>Retail Management Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, ad blanditiis ex in veritatis enim laboriosam! Iure praesentium magni sed!</p>",
-    "challengesText": "Chalanges Retail Management Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, ad blanditiis ex in veritatis enim laboriosam! Iure praesentium magni sed!",
-    "technologiesText": "Retail Management Technologies Lorem ipsum dolor sit amet consectetur adipisicing elit",
-    "technologiesList": ["C#", "API", "WPF", "Blazor", "HTML", "CSS"]
+    "bigImagesAlt": ["Изображение страницы сайта с перечисленной продукцией"],
+    "projectText": "<p>Данное приложение создано для упрощения управления магазином. В этом приложении можно отслеживать количество совершенных покупок, количество проданных товаров, сумму проданных товаров и уплаченных налогов, а также какой кассир оформлял покупку.</p><p>У данного приложения есть два пользовательских интерфейса: десктопный реализованный с помощью платформы WPF и Web интерфес реализованный при помощи Blazor WebAssembly. Общение приложения с базой данных происходит через Web API.</p>",
+    "challengesText": "Одной из наибольших проблем в этом приложении являлась аутентификация через API реализованная при помощью JSON Web Token.",
+    "technologiesText": "При создании приложения для ритейл менеджмента был использован следующий стек технологий:",
+    "technologiesList": [
+      "C#",
+      "SQL Server",
+      "API",
+      "JWT",
+      "WPF",
+      "Caliburn.Micro",
+      "AutoMapper",
+      "Blazor WebAssembly",
+      "HTML",
+      "CSS"
+    ],
+    "LinkToGitHub": "https://github.com/Stepan-Makarov/TimCoRetailManager"
+  },
+  {
+    "title": "Книга Предложений",
+    "smallImage": "images/send-suggestion.jpg",
+    "smallImageAlt": "Изображение страницы создания нового предложения",
+    "bigImages": ["images/suggestions-home.jpg"],
+    "bigImagesAlt": [
+      "Домашняя страница сайта с предложениями, с перечислением некоторых предложений"
+    ],
+    "projectText": "<p>Книга предложений - это сайт на котором пользователи могут оставлять свои предложения, жалобы или пожелания. Также тут можно голосовать за предложения других пользователей. Для того чтобы оставить предложение или проголосовать за предложения других пользователей необходимо зарегистрироваться.</p> <p>На сайте предусмотрен администратор, который будет проверять, не является ли предложение оскорбительным и на основании этого принимать решение пропустить или отклонить это предложение. Также администратор может присваивать предложениям статусы и оставлять свои комментарии. </p>",
+    "challengesText": "При создании этого приложения я столкнулся с проблемой недостаточного понимания работы авторизации аутентификации в ASP.Net, Зависанием сайта при частом нажатии на кнопку проголосовать (проблема возникла из-за использования транзакции в MongoDB и была решена запретом пользователям нажимать кнопку чаще одного раза в 0.5 скунды) Также проблемой стало написании CSS и последущая адоптация сайта под различные размеры экрана",
+    "technologiesText": "Для создания сайта книги предложений использовались:",
+    "technologiesList": [
+      "C#",
+      "MongoDB",
+      "ASP.NET Core Identity",
+      "Blazor Web App",
+      "HTML",
+      "CSS"
+    ],
+    "LinkToGitHub": "https://github.com/Stepan-Makarov/SuggestionBook"
   },
   {
     "title": "Сайт ресторана",
-    "smallImage": "images/reustarantAboutBegining.jpg",
+    "smallImage": "images/reustarantMenu.jpg",
     "smallImageAlt": "Изображение страницы сайта ресторана",
     "bigImages": [
       "images/reustarantAboutBegining.jpg",
@@ -22,9 +55,10 @@
       "Начало страницы сайта ресторана",
       "Продолжение страницы сайта ресторана"
     ],
-    "projectText": "<p>Reustarant Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, ad blanditiis ex in veritatis enim laboriosam! Iure praesentium magni sed!</p>",
-    "challengesText": "Chalanges Reustarant Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, ad blanditiis ex in veritatis enim laboriosam! Iure praesentium magni sed!",
-    "technologiesText": "Reustarant Technologies Lorem ipsum dolor sit amet consectetur adipisicing elit",
-    "technologiesList": ["HTML", "CSS"]
+    "projectText": "<p>Это сайт ресторана на котором можно посмотреть меню и его местонахождение. На этом сайте нельзя забронировать столик, заказать еду или оставить отзыв, данный сайт служить только в качестве визитной карточки. Для того чтобы сделать заказ необходимо посетить его лично.</p>",
+    "challengesText": "Главной трудностью в этом проекте являлось размещение заголовков страниц поцентру картинки. В остальном этот мини проект является довольно простым.",
+    "technologiesText": "Для данного проекта не использовалось ничего кроме:",
+    "technologiesList": ["HTML", "CSS"],
+    "LinkToGitHub": "https://github.com/Stepan-Makarov/Restaurant:"
   }
 ]

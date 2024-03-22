@@ -2,11 +2,14 @@
   'use strict';
   app.portfolioItems = [];
   app.selectedPortfolioItem = {};
-  const basePortfolioApiUrl = 'https://localhost:7126/api/portfolio/';
+  const basePortfolioApiUrl =
+    'https://www.portfolioapi.somee.com/api/portfolio/';
+  // const basePortfolioApiUrl = 'js/sitedata.json';
 
   app.homepage = function () {
-    setCopyrightDate();
     wireContactForm();
+    setMyAge();
+    setCopyrightDate();
   };
 
   app.portfolio = async function () {
@@ -27,6 +30,14 @@
   function setCopyrightDate() {
     const date = new Date();
     document.getElementById('copyrightYear').innerText = date.getFullYear();
+  }
+
+  function setMyAge() {
+    const currentDate = new Date();
+    const birthDate = new Date('1998-05-14');
+    // at first currentDate in miMilliseconds
+    const age = (currentDate - birthDate) / (1000 * 60 * 60 * 24 * 365);
+    document.getElementById('myAge').innerText = Math.floor(age);
   }
 
   function wireContactForm() {
@@ -57,9 +68,12 @@
     //const mailto = `mailto:${myEmail}?subject=Contact From ${fullname.value}&body=${message.value}`;
     //window.open(mailto);
 
-    senderName.value = '';
-    senderEmail.value = '';
-    SenderMessage.value = '';
+    fullname.value = '';
+    email.value = '';
+    message.value = '';
+    messageData.senderName = '';
+    messageData.senderEmail = '';
+    messageData.senderMessage = '';
   }
 
   async function loadDataAsync() {
@@ -68,6 +82,7 @@
     if (cacheData !== null) {
       app.portfolioItems = JSON.parse(cacheData);
     } else {
+      // const rawData = await fetch(`${basePortfolioApiUrl}`);
       const rawData = await fetch(`${basePortfolioApiUrl}projects`);
       const data = await rawData.json();
       app.portfolioItems = data;
@@ -134,6 +149,18 @@
     originImages.remove();
     divImages.id = 'item-images';
     images.appendChild(divImages);
+
+    if (
+      app.selectedPortfolioItem.linkToGitHub !== null &&
+      app.selectedPortfolioItem.linkToGitHub !== undefined
+    ) {
+      const divLinkToGitHub = document.querySelector('.hiden-link-to-github');
+      const linkToGitHub = divLinkToGitHub.querySelector('a');
+      linkToGitHub.href = app.selectedPortfolioItem.linkToGitHub;
+      linkToGitHub.innerText = 'Сcылка на GitHub';
+      divLinkToGitHub.classList.remove('hiden-link-to-github');
+      divLinkToGitHub.classList.add('link-to-github');
+    }
   }
 
   function loadPortfolioItems() {

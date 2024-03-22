@@ -17,4 +17,5 @@ public class ProjectDataModel
     public string? ChallengesText { get; set; }
     public string? TechnologiesText { get; set; }
     public List<string>? TechnologiesList { get; set; }
+    public string? LinkToGitHub { get; set; }
 }

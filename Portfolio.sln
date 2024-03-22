@@ -26,7 +26,12 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "PortfolioUI", "PortfolioUI\
 		SlnRelativePath = "PortfolioUI\"
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortfolioApi", "PortfolioApi\PortfolioApi.csproj", "{B0AEBF20-8446-44AC-BF3B-59359B61D798}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PortfolioApi", "PortfolioApi\PortfolioApi.csproj", "{B0AEBF20-8446-44AC-BF3B-59359B61D798}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DB", "DB", "{DC8A30B9-B7C6-4D9A-9930-DC5329BDEBAA}"
+	ProjectSection(SolutionItems) = preProject
+		DB\PortfolioSQLiteDB.db = DB\PortfolioSQLiteDB.db
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

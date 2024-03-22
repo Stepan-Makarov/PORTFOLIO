@@ -400,6 +400,9 @@ FodyWeavers.xsd
 #vs code folder
 vscode/
 
+#appsettings file
+appsettings.json
+
 #dockerignore
 **/.classpath
 **/.dockerignore
